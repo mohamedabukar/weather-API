@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+  <link rel=“stylesheet” href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="main.css" />
+  <title>Git it Done</title>
+</head>
+
+<body class="flex-column min-100-vh">
+  <header class="hero">
+    <h1 class="app-title"> Weather Dashboard</h1>
+    <p>Search for a city and get the current Weather</p>
+  </header>
+
+
+  <main class="flex-row justify-space-between">
+    <div class="col-5 col-md-4">
+
+      <div class="card">
+        <h3 class="card-header text-uppercase">Search for a city</h3>
+        <form id="user-form" class="card-body">
+          <input name="city" id="city-name" type="text" class="form-input"/>
+          <button type="button" class="searchBtn">Search</button>
+        </form>
+      </div>
+
+      <div class="row card">
+        <h3 class="card-header text-uppercase">Search By Topic</h3>
+        <div id="top-searches" class="card-body">
+          <button class="col-12 btn" id="city1">placeholder</button>
+          <button class="col-12 btn" id="city2">placeholder</button>
+          <button class="col-12 btn" id="city3">placeholder</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-8">
+      <h2 class="subtitle" id= "searched-city">placeholder</h2>
+      <div id="city-container" class="list-group"></div>
+    </div>
+  </main>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="script.js"></script>
+
+</body>
+
+</html>
