@@ -8,9 +8,12 @@ function storeInput(cityName){
     .then(function (response) {
         return response.json()
     })
-    .then(function (weatherData) {
-        console.log(weatherData)
-        var 
+    .then(function (data) {
+        console.log(data)
+        $(".tempEl").text(data.main.temp);
+        $(".humidityEL").text(data.main.humidity);
+        $(".windEl").text(data.wind);
+        $(".list-group").append(tempEl, humidityEL, windEl)
         })
 
 }
