@@ -10,10 +10,11 @@ function storeInput(cityName){
     })
     .then(function (data) {
         console.log(data)
-        $(".tempEl").text(data.main.temp);
-        $(".humidityEL").text(data.main.humidity);
-        $(".windEl").text(data.wind);
-        $(".list-group").append(tempEl, humidityEL, windEl)
+        $(".tempEl").text("Tempurature: " +((( data.main.temp- 273.15) * 9/5) + 32).toFixed(2) +"F");
+        $(".humidityEl").text("Humiditiy: "+data.main.humidity);
+        $(".windEl").text("Wind speed: "+(data.wind.speed)+" mph");
+        
+        
         })
 
 }
